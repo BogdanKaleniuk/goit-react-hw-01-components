@@ -8,7 +8,8 @@ export const Prof = styled.div`
 
   width: 500px;
   margin: 0 auto;
-
+  margin-top: 10px;
+  margin-bottom: 50px;
   border: 1px solid #e9eef3;
   border-radius: 5px;
   box-shadow: 0px 0px 6px 5px rgb(100 150 200 / 25%);

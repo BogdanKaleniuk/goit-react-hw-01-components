@@ -1,9 +1,11 @@
 import PropTypes from 'prop-types';
 import FriendListItem from '../FriendListItem/FriendListItem';
 
+import { FriendListBox } from './friendlist.styled';
+
 export default function FriendList({ friends }) {
   return (
-<ul class="friend-list">
+<FriendListBox class="friend-list">
   {friends.map(friend => (
         <FriendListItem
           key={friend.id}
@@ -12,7 +14,7 @@ export default function FriendList({ friends }) {
           isOnline={friend.isOnline}
         />
       ))}
-</ul>
+</FriendListBox>
   );
 }
 
