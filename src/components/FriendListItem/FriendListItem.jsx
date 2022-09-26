@@ -4,10 +4,10 @@ import { Item, Status, Avatar, Name } from './friendlistItem.styled';
 
 export default function FriendListItem({ avatar, name, isOnline }) {
     return (
-<Item class="item">
-  <Status class="status" isOnline={isOnline}>{isOnline}</Status>
-  <Avatar class="avatar" src={avatar} alt="User avatar" width="48" />
-  <Name class={name}></Name>
+<Item className="item">
+  <Status className="status" isOnline={isOnline}>{isOnline}</Status>
+  <Avatar className="avatar" src={avatar} alt="User avatar" width="48" />
+  <Name className={name}></Name>
 </Item>
     );
 }
