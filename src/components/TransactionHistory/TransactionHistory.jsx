@@ -4,7 +4,7 @@ import { TrHistory, Header, HeaderEl, BgLine, TableEl, } from './transactionhist
 
 export default function TransactionHistory({ items }) {
     return (
-<TrHistory className="transaction-history">
+<TrHistory>
   <Header>
     <BgLine>
       <HeaderEl>Type</HeaderEl>

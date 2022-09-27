@@ -23,30 +23,29 @@ export default function Profile({
   likes,
 }) {
     return (
-<Prof className="profile">
-  <Description className="description">
+<Prof>
+  <Description>
     <Avatar
       src={avatar}
       alt="User avatar"
-      className="avatar"
     />
-    <UserName className="name">{username}</UserName>
-    <Tag className="tag">@{tag}</Tag>
-    <Location className="location">{location}</Location>
+    <UserName>{username}</UserName>
+    <Tag>@{tag}</Tag>
+    <Location>{location}</Location>
   </Description>
 
-  <Stats className="stats">
+  <Stats>
     <StatsItem>
-      <Label className="label">Followers</Label>
-      <Text className="quantity">{followers}</Text>
+      <Label>Followers</Label>
+      <Text>{followers}</Text>
     </StatsItem>
     <StatsItem>
-      <Label className="label">Views</Label>
-      <Text className="quantity">{views}</Text>
+      <Label>Views</Label>
+      <Text>{views}</Text>
     </StatsItem>
     <StatsItem>
-      <Label className="label">Likes</Label>
-      <Text className="quantity">{likes}</Text>
+      <Label>Likes</Label>
+      <Text>{likes}</Text>
     </StatsItem>
   </Stats>
 </Prof>
