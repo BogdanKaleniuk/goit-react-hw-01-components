@@ -7,12 +7,12 @@ export default function FriendListItem({ avatar, name, isOnline }) {
 <Item>
   <Status isOnline={isOnline}>{isOnline}</Status>
   <Avatar src={avatar} alt="User avatar" width="48" />
-  <Name className={name}></Name>
+  <Name>{name}</Name>
 </Item>
     );
 }
 
-FriendListItem.protoType = {
+FriendListItem.propType = {
   avatar: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.string.isRequired, 
